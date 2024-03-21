@@ -1,0 +1,127 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    max-width: 340px;
+}
+
+.order__img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.order__content {
+    padding: 1.5rem;
+}
+
+.content__title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+.content__description {
+    font-size: 0.9rem;
+    color: var(--desaturated-blue);
+    line-height: 24px;
+    font-weight: 500;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
+}
+
+.price__box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box__plan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.plan__type {
+    color: var(--dark-blue);
+}
+
+.plan__value {
+    color: var(--desaturated-blue);
+}
+
+.price__link {
+    font-size: 0.8rem;
+    color: var(--bright-blue);
+    font-weight: 900;
+    transition: 0.4s;
+}
+
+.content__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.buttons__pay,
+.buttons__cancel {
+    cursor: pointer;
+    border: none;
+    font-family: var(--font);
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.buttons__pay {
+    padding: 0.8rem 2rem;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    border-radius: 12px;
+    box-shadow: 0px 14px 31px -4px rgba(0, 0, 0, 0.35);
+}
+
+.buttons__pay:hover,
+.price__link:hover {
+    opacity: 0.8;
+}
+
+.buttons__cancel {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    margin-top: 0.5rem;
+}
+
+.buttons__cancel:hover {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+@media screen and (max-width: 320px) {
+    .order {
+        max-width: 270px;
+    }
+
+    .content__price {
+        justify-content: center;
+        gap: 0.7rem;
+    }
+
+    .price__box {
+        gap: 0.5rem;
+    }
+}
