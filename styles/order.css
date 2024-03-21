@@ -4,7 +4,7 @@
     text-align: center;
     background-color: hsl(0, 0%, 100%);
     border-radius: 16px;
-    max-width: 340px;
+    max-width: 345px;
 }
 
 .order__img {
@@ -20,7 +20,7 @@
 .content__title {
     font-size: 1.5rem;
     font-weight: 900;
-    margin-bottom: 1rem;
+    margin: 1.5rem 0;
     color: var(--dark-blue);
 }
 
